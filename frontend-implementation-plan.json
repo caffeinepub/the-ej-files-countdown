@@ -1,0 +1,61 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix file numbering total, limit race mentions, and add GGFan references",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Fix the file numbering display to correctly show '1 of 5', '2 of 5', etc., with the total count derived dynamically from the stories array length",
+      "acceptanceCriteria": [
+        "Story page 1 displays '1 of 5' at the top",
+        "Story page 2 displays '2 of 5' at the top",
+        "Story page 3 displays '3 of 5' at the top",
+        "Story page 4 displays '4 of 5' at the top",
+        "Story page 5 displays '5 of 5' at the top",
+        "The total count is derived from the stories array length, not a hardcoded number"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/StoryPage.tsx",
+          "operation": "modify",
+          "description": "Update the StoryPage component to accept a totalStories prop and display it correctly in the file header (e.g., 'FILE {storyNumber} of {totalStories}'). Replace any hardcoded total count with the dynamic prop value."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Pass the total count of stories (stories.length from storyContent.ts) as a totalStories prop to each StoryPage component instance. Ensure the count is derived from the actual stories array, not hardcoded."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Audit and limit references to EJ being Black to at most one mention across all five story narratives",
+      "acceptanceCriteria": [
+        "EJ's race is referenced at most one time across all five story pages",
+        "Any duplicate or additional race mentions have been removed or reworded"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/data/storyContent.ts",
+          "operation": "modify",
+          "description": "Review all five story objects in the stories array and identify every mention of EJ being Black. Keep only one reference (preferably in the first story where it appears naturally in context) and remove or rephrase all other instances to comply with the constraint of mentioning race no more than once total."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Integrate the name 'GGFan' into the story narratives at least twice across the five stories",
+      "acceptanceCriteria": [
+        "The name 'GGFan' appears at least twice across the five story narratives",
+        "Each mention of GGFan fits naturally within the classified-dossier story tone"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/data/storyContent.ts",
+          "operation": "modify",
+          "description": "Add the name 'GGFan' at least twice across the five story objects, weaving it naturally into the existing classified-dossier narrative context. GGFan may be a collaborator, witness, contact, or referenced individual. Ensure the mentions maintain the secretive, redacted tone of the stories."
+        }
+      ]
+    }
+  ]
+}

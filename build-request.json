@@ -1,0 +1,75 @@
+{
+  "kind": "build_request",
+  "title": "Fix file numbering total, limit race mentions, and add GGFan references",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Fix the file numbering display at the top of each story page so it correctly reads '1 of 5', '2 of 5', '3 of 5', '4 of 5', and '5 of 5'. The total count must be derived dynamically from the actual number of stories (currently 5), not hardcoded to 3.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "the files should say 1 of 5, 2 of 5, ect at the top, it is a problem when going past 3rd file since it says 4 of 3 and 5 of 3"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Story page 1 displays '1 of 5' at the top",
+        "Story page 2 displays '2 of 5' at the top",
+        "Story page 3 displays '3 of 5' at the top",
+        "Story page 4 displays '4 of 5' at the top",
+        "Story page 5 displays '5 of 5' at the top",
+        "The total count is derived from the stories array length, not a hardcoded number"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Audit all five story narratives in storyContent.ts and ensure that EJ being Black is mentioned no more than once across all five stories combined. Remove or rephrase any additional references.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "don't mention the he is black more than once"
+        ]
+      },
+      "acceptanceCriteria": [
+        "EJ's race is referenced at most one time across all five story pages",
+        "Any duplicate or additional race mentions have been removed or reworded"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Update the story content in storyContent.ts to include the name 'GGFan' at least twice across the five stories. GGFan should be woven naturally into the existing narrative context.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Mention GGFan at least twice"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The name 'GGFan' appears at least twice across the five story narratives",
+        "Each mention of GGFan fits naturally within the classified-dossier story tone"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the number of story pages (must remain 5)",
+    "Do not alter the overall classified-dossier narrative style"
+  ],
+  "nonGoals": [
+    "Adding new story pages",
+    "Changing the app's visual design or layout",
+    "Backend changes"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

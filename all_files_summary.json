@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping three implemented features (story file numbering fix, race reference audit, GGFan name insertion) to their relevant source files and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file, describing their roles and key implementation details.",
+  "frontend/index.css": "Global Tailwind CSS entry point defining light and dark mode CSS custom properties (OKLCH color tokens) for the app's design system.",
+  "frontend/index.html": "HTML shell for the React app titled 'The EJ Files Countdown' that mounts the app into a root div and loads the main TypeScript entry point.",
+  "frontend/src/App.tsx": "Root React component managing navigation between the landing page, a 5-second loading screen, and five story pages, passing dynamically derived totalStories to each StoryPage.",
+  "frontend/src/components/CountdownTimer.tsx": "Empty file placeholder for a countdown timer component.",
+  "frontend/src/components/StoryPage.tsx": "Reusable story page component that renders a classified file header using dynamic totalStories prop, section-based content cards, and previous/next navigation buttons.",
+  "frontend/src/data/storyContent.ts": "Defines the StoryContent interface and exports five classified-file story objects about EJ, with race mentioned only once and GGFan referenced twice across the narratives.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that creates and caches an ICP backend actor via React Query, supporting both anonymous and authenticated (Internet Identity) configurations.",
+  "frontend/src/hooks/useCountdown.ts": "Custom React hook that manages a 2-day 3-hour countdown timer, persisting the target date in localStorage under a versioned key and updating remaining time every second.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and hook for Internet Identity authentication on the ICP platform, managing login state, identity persistence, and AuthClient lifecycle.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file with no implementation, noting that countdown functionality is client-side only and requires no backend queries.",
+  "frontend/src/index.css": "Global CSS file that sets up Tailwind base/components/utilities and defines a deep-space dark theme using OKLCH CSS custom properties, plus fade/slide-in keyframe animations.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with OKLCH-based color tokens, custom fonts, border radii, glow box shadows, and animation keyframes, plus typography and container-query plugins.",
+  "project_state.json": "Project state metadata tracking three fix requests: correcting dynamic file numbering display, limiting race mentions to once across stories, and adding 'GGFan' references at least twice in story content."
+}

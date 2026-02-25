@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [
+    "File numbering shows incorrect total (e.g., '4 of 3', '5 of 3') when there are more than 3 files; total count must be dynamic"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-fix-the-file-numbering-display-at-the-top-of-each-story-page-so-it-correctly-reads-1-of-5-2-of-5-3-of-5-4-of-5-and-5-of-5-the-total-count-must-be-derived-dynamically-from-the-actual-number-of-stories-currently-5-not-hardcoded-to-3",
+      "title": "Fix the file numbering display at the top of each story page so it correctly reads '1 of 5', '2 of 5', '3 of 5', '4 of 5', and '5 of 5'. The total count must be derived dynamically from the actual number of stories (currently 5), not hardcoded to 3.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-audit-all-five-story-narratives-in-storycontent-ts-and-ensure-that-ej-being-black-is-mentioned-no-more-than-once-across-all-five-stories-combined-remove-or-rephrase-any-additional-references",
+      "title": "Audit all five story narratives in storyContent.ts and ensure that EJ being Black is mentioned no more than once across all five stories combined. Remove or rephrase any additional references.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-story-content-in-storycontent-ts-to-include-the-name-ggfan-at-least-twice-across-the-five-stories-ggfan-should-be-woven-naturally-into-the-existing-narrative-context",
+      "title": "Update the story content in storyContent.ts to include the name 'GGFan' at least twice across the five stories. GGFan should be woven naturally into the existing narrative context.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Fix file numbering total, limit race mentions, and add GGFan references",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
