@@ -2,10 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-fix-the-file-numbering-display-at-the-top-of-each-story-page-so-it-correctly-reads-1-of-5-2-of-5-3-of-5-4-of-5-and-5-of-5-the-total-count-must-be-derived-dynamically-from-the-actual-number-of-stories-currently-5-not-hardcoded-to-3",
-      "featureTitle": "Fix the file numbering display at the top of each story page so it correctly reads '1 of 5', '2 of 5', '3 of 5', '4 of 5', and '5 of 5'. The total count must be derived dynamically from the actual number of stories (currently 5), not hardcoded to 3.",
+      "featureId": "feature-on-the-fifth-story-page-file-5-add-a-prominently-styled-button-that-opens-https-www-youtube-com-e-j-money-in-a-new-browser-tab-when-clicked-the-button-should-be-clearly-visible-and-placed-near-the-bottom-of-the-page-content-distinct-from-the-existing-previous-next-navigation-buttons",
+      "featureTitle": "On the fifth story page (File 5), add a prominently styled button that opens https://www.youtube.com/@E.J-Money in a new browser tab when clicked. The button should be clearly visible and placed near the bottom of the page content, distinct from the existing previous/next navigation buttons.",
       "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/StoryPage.tsx"
       ],
       "components": [
@@ -17,42 +16,6 @@
       ],
       "testIds": [
         "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-audit-all-five-story-narratives-in-storycontent-ts-and-ensure-that-ej-being-black-is-mentioned-no-more-than-once-across-all-five-stories-combined-remove-or-rephrase-any-additional-references",
-      "featureTitle": "Audit all five story narratives in storyContent.ts and ensure that EJ being Black is mentioned no more than once across all five stories combined. Remove or rephrase any additional references.",
-      "files": [
-        "frontend/src/data/storyContent.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-story-content-in-storycontent-ts-to-include-the-name-ggfan-at-least-twice-across-the-five-stories-ggfan-should-be-woven-naturally-into-the-existing-narrative-context",
-      "featureTitle": "Update the story content in storyContent.ts to include the name 'GGFan' at least twice across the five stories. GGFan should be woven naturally into the existing narrative context.",
-      "files": [
-        "frontend/src/data/storyContent.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
       ],
       "confidence": "high"
     }

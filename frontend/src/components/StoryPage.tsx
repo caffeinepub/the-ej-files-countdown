@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { SiYoutube } from 'react-icons/si';
 import { StoryContent } from '../data/storyContent';
 
 interface StoryPageProps {
@@ -47,6 +48,25 @@ export function StoryPage({ story, totalStories, onNext, onPrevious, showNext, s
               </div>
             ))}
           </div>
+
+          {/* YouTube CTA — only on File 5 */}
+          {story.pageNumber === 5 && (
+            <div className="flex justify-center animate-in fade-in duration-1000 delay-400">
+              <a
+                href="https://www.youtube.com/@E.J-Money"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  className="group gap-3 bg-[#FF0000] hover:bg-[#cc0000] text-white font-bold text-base px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  <SiYoutube className="h-6 w-6 shrink-0" />
+                  Watch E.J. on YouTube
+                </Button>
+              </a>
+            </div>
+          )}
 
           {/* Navigation */}
           <div className="flex justify-between items-center pt-8 animate-in fade-in duration-1000 delay-500">

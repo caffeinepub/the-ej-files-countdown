@@ -5,6 +5,6 @@
   "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (currently empty as countdown is client-side only).",
   "frontend/src/index.css": "Global styles with deep space theme using OKLCH colors (dark blue/purple background with electric cyan accents) and custom animations.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with custom fonts, glow shadows, and design tokens for the mysterious countdown aesthetic.",
-  "frontend/src/components/StoryPage.tsx": "Reusable story page component that now accepts a `totalStories` prop and displays the correct \"CLASSIFIED FILE X OF Y\" header using the dynamic total, along with section-based content layout and previous/next navigation controls.",
+  "frontend/src/components/StoryPage.tsx": "Reusable story page component displaying classified file content with section cards, navigation buttons, and — exclusively on File 5 — a red YouTube button linking to https://www.youtube.com/@E.J-Money in a new tab.",
   "frontend/src/data/storyContent.ts": "Five classified-file story objects about EJ — race is mentioned only once (File #1: \"a Black kid from the A\"), GGFan is referenced twice (File #2 as a loyal viewer who posted a warning clip, File #3 as the NDA-signing community member who went silent), and all other race references have been removed or rephrased."
 }

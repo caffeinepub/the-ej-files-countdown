@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Fix the story file numbering display, limit race mentions to once, and add at least two references to "GGFan" across the five story narratives.
+**Goal:** Add a YouTube channel button exclusively on the File 5 story page that links to the E.J. Money YouTube channel.
 
 **Planned changes:**
-- Fix the "X of Y" file numbering at the top of each story page so the total is derived dynamically from the stories array length, correctly showing "1 of 5" through "5 of 5"
-- Audit all five story narratives and reduce references to EJ being Black to no more than one mention total, removing or rephrasing any extras
-- Weave the name "GGFan" naturally into the story content at least twice across the five narratives
+- Add a prominently styled button on the fifth story page (File 5) only
+- Button opens https://www.youtube.com/@E.J-Money in a new browser tab when clicked
+- Button is visually distinct from the existing previous/next navigation buttons and placed near the bottom of the page content
 
-**User-visible outcome:** Story pages correctly display their position out of five, EJ's race is mentioned only once across all stories, and the name "GGFan" appears at least twice within the classified-dossier narrative.
+**User-visible outcome:** Readers on File 5 will see a clearly visible YouTube channel button that takes them to the E.J. Money YouTube channel in a new tab.
